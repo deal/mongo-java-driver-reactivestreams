@@ -62,5 +62,9 @@ configure(subprojects - project(':util') - project(':examples') - project(':exam
             dependsOn = [];
         }
     }
-
+    nexus {
+      sign = false
+      repositoryUrl = 'http://artifactory.internal.corp.deal.com/repository/maven-releases/'
+      snapshotRepositoryUrl = 'http://artifactory.internal.corp.deal.com/repository/maven-snapshots/'
+    }
 }
